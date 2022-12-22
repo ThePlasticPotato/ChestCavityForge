@@ -1,0 +1,184 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2022-09-14 22:04:35
+Description: Ticking entity
+
+java.util.NoSuchElementException: minecraft:killer_entity
+	at net.minecraft.world.level.storage.loot.LootContext.getParam(LootContext.java:55) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading}
+	at net.tigereye.chestcavity.listeners.LootRegister.addLoot(LootRegister.java:57) ~[%23186!/:?] {re:mixin,re:classloading}
+	at net.minecraft.world.entity.LivingEntity.handler$zzc000$addCustomLootFromEntity(LivingEntity.java:3608) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.createLootContext(LivingEntity.java:1383) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.createLootContext(Mob.java:475) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.dropFromLootTable(LivingEntity.java:1372) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.dropFromLootTable(Mob.java:470) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.dropAllDeathLoot(LivingEntity.java:1339) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.die(LivingEntity.java:1298) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.hurt(LivingEntity.java:1155) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.animal.Animal.hurt(Animal.java:75) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.entity.LivingEntity.pushEntities(LivingEntity.java:2676) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.aiStep(LivingEntity.java:2615) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.aiStep(Mob.java:504) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.world.entity.AgeableMob.aiStep(AgeableMob.java:117) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.entity.animal.Animal.aiStep(Animal.java:53) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2291) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.tick(Mob.java:316) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:658) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:457) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$3(ServerLevel.java:323) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:303) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.level.storage.loot.LootContext.getParam(LootContext.java:55) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading}
+	at net.tigereye.chestcavity.listeners.LootRegister.addLoot(LootRegister.java:57) ~[%23186!/:?] {re:mixin,re:classloading}
+	at net.minecraft.world.entity.LivingEntity.handler$zzc000$addCustomLootFromEntity(LivingEntity.java:3608) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.createLootContext(LivingEntity.java:1383) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.createLootContext(Mob.java:475) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.dropFromLootTable(LivingEntity.java:1372) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.dropFromLootTable(Mob.java:470) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.dropAllDeathLoot(LivingEntity.java:1339) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.die(LivingEntity.java:1298) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.hurt(LivingEntity.java:1155) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.animal.Animal.hurt(Animal.java:75) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.entity.LivingEntity.pushEntities(LivingEntity.java:2676) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.aiStep(LivingEntity.java:2615) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.aiStep(Mob.java:504) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.world.entity.AgeableMob.aiStep(AgeableMob.java:117) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.entity.animal.Animal.aiStep(Animal.java:53) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2291) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,re:classloading,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity,pl:mixin:A}
+	at net.minecraft.world.entity.Mob.tick(Mob.java:316) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:chestcavity.mixins.json:MixinLivingEntity$MixinMobEntity,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:658) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:457) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$3(ServerLevel.java:323) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:303) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:cow (net.minecraft.world.entity.animal.Cow)
+	Entity ID: 3037
+	Entity Name: Cow
+	Entity's Exact location: 43.55, 70.71, -17.45
+	Entity's Block location: World: (43,70,-18), Section: (at 11,6,14 in 2,4,-2; chunk contains blocks 32,-64,-32 to 47,319,-17), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Entity's Momentum: 0.00, 0.23, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:457) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$3(ServerLevel.java:323) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:303) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/240, l='ServerLevel[New World]', x=41.30, y=70.00, z=-18.38]]
+	Chunk stats: 2809
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (16,73,0), Section: (at 0,9,0 in 1,4,0; chunk contains blocks 16,-64,0 to 31,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 12938 game time, 207 day time
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 48427 (now: false), thunder time: 70950 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Mac OS X (x86_64) version 10.13.6
+	Java Version: 17.0.3.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 415660544 bytes (396 MiB) / 2397044736 bytes (2286 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+	Identifier: Intel64 Family 6 Model 42 Stepping 7
+	Microarchitecture: Sandy Bridge (Client)
+	Frequency (GHz): 3.10
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: AMD Radeon HD 6750M
+	Graphics card #0 vendor: AMD (0x1002)
+	Graphics card #0 VRAM (MB): 256.00
+	Graphics card #0 deviceId: 0x6741
+	Graphics card #0 versionInfo: Revision ID: 0x0000, ROM Revision: 113-C2950K-212, VBIOS Version: 113-C2950700-101, EFI Driver Version: 01.00.571
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 1.33
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 1.33
+	Memory slot #1 type: DDR3
+	Memory slot #2 capacity (MB): 4096.00
+	Memory slot #2 clockSpeed (GHz): 1.33
+	Memory slot #2 type: DDR3
+	Memory slot #3 capacity (MB): 4096.00
+	Memory slot #3 clockSpeed (GHz): 1.33
+	Memory slot #3 type: DDR3
+	Virtual memory max (MB): 17408.00
+	Virtual memory used (MB): 10239.86
+	Swap memory total (MB): 1024.00
+	Swap memory used (MB): 136.25
+	JVM Flags: 1 total; -Xss1M
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/240, l='ServerLevel[New World]', x=41.30, y=70.00, z=-18.38]]
+	Data Packs: vanilla, mod:cloth_config (incompatible), mod:forge, mod:chestcavity (incompatible)
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.25.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.25.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.25.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.25.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.25.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.1.25_mapped_official_1.19.2-recomp|Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		clothconfig-348521-3972423_mapped_official_1.19.2.|Cloth Config v8 API           |cloth_config                  |8.2.88              |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |43.1.25             |DONE      |Manifest: NOSIGNATURE
+		main                                              |Chest Cavity                  |chestcavity                   |1.19.2-2.16.2       |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 64a25301-2125-458c-8d0c-dc880bb6230e
+	FML: 43.1
+	Forge: net.minecraftforge:43.1.25

@@ -1,0 +1,7 @@
+Java Launcher: /Library/Java/JavaVirtualMachines/jdk-17.0.3.1.jdk/Contents/Home/bin/java
+Arguments: '--inJar, /Users/booneldan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.25/forge-1.19.2-43.1.25-injected.jar, --outJar, /Users/booneldan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.25_mapped_official_1.19.2/forge-1.19.2-43.1.25_mapped_official_1.19.2.jar, --logFile, accesstransform.log, --atFile, /Users/booneldan/Desktop/Minecraft Modding/ChestCavity/NewestChestCavity/build/_atJar_4/parent_at.cfg'
+Classpath:
+ - /Users/booneldan/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.0.7/accesstransformers-8.0.7-fatjar.jar
+Working directory: /Users/booneldan/Desktop/Minecraft Modding/ChestCavity/NewestChestCavity/build/_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

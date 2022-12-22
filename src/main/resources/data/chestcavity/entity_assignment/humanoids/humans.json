@@ -1,0 +1,12 @@
+{
+  "chestcavity": "chestcavity:types/humanoids/human.json",
+  "entities": [
+    "minecraft:evoker",
+    "minecraft:illusioner",
+    "minecraft:pillager",
+    "minecraft:villager",
+    "minecraft:vindicator",
+    "minecraft:wandering_trader",
+    "minecraft:witch"
+  ]
+}

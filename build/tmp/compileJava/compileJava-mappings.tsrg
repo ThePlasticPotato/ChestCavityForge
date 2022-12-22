@@ -1,0 +1,13 @@
+net/tigereye/chestcavity/mixin/MixinHungerManager tickTimer f_38699_
+net/tigereye/chestcavity/mixin/MixinHungerManager foodLevel f_38696_
+net/tigereye/chestcavity/mixin/MixinHungerManager saturationLevel f_38697_
+net/tigereye/chestcavity/mixin/MixinHungerManager exhaustionLevel f_38698_
+net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinCreeperEntity swell f_32270_
+net/tigereye/chestcavity/mixin/MixinStatusEffect category f_19447_
+net/tigereye/chestcavity/mixin/MixinStatusEffectInstance duration f_19503_
+net/tigereye/chestcavity/mixin/MixinLivingEntity increaseAirSupply (I)I m_7305_
+net/tigereye/chestcavity/mixin/MixinLivingEntity defineSynchedData ()V m_8097_
+net/tigereye/chestcavity/mixin/MixinLivingEntity readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7378_
+net/tigereye/chestcavity/mixin/MixinLivingEntity addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7380_
+net/tigereye/chestcavity/mixin/MixinLivingEntity getAddEntityPacket ()Lnet/minecraft/network/protocol/Packet; m_5654_
+net/tigereye/chestcavity/mixin/MixinPotionEntity getDefaultItem ()Lnet/minecraft/world/item/Item; m_7881_

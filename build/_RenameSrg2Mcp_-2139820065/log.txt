@@ -1,0 +1,15 @@
+Java Launcher: /Library/Java/JavaVirtualMachines/jdk-17.0.3.1.jdk/Contents/Home/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /Users/booneldan/.gradle/caches/modules-2/files-2.1/curse.maven/clothconfig-348521/3972423/fbd645755abc0dbe5eb1adeb5e649835294a769f/clothconfig-348521-3972423.jar, --output, /Users/booneldan/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/clothconfig-348521/3972423_mapped_official_1.19.2/clothconfig-348521-3972423_mapped_official_1.19.2.jar, --mcp, /Users/booneldan/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.19.2/mapping-1.19.2-mapping.zip, --strip-signatures'
+Classpath:
+ - /Users/booneldan/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.3.2/installertools-1.3.2-fatjar.jar
+Working directory: /Users/booneldan/Desktop/Minecraft Modding/ChestCavity/NewestChestCavity/build/_RenameSrg2Mcp_-2139820065
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /Users/booneldan/.gradle/caches/modules-2/files-2.1/curse.maven/clothconfig-348521/3972423/fbd645755abc0dbe5eb1adeb5e649835294a769f/clothconfig-348521-3972423.jar
+Output: /Users/booneldan/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/clothconfig-348521/3972423_mapped_official_1.19.2/clothconfig-348521-3972423_mapped_official_1.19.2.jar
+MCP:    /Users/booneldan/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.19.2/mapping-1.19.2-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

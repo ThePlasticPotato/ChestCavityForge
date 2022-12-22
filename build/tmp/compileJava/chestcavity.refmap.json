@@ -1,0 +1,124 @@
+{
+  "mappings": {
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinMobEntity": {
+      "checkAndHandleImportantInteractions": "Lnet/minecraft/world/entity/Mob;m_21499_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "net/tigereye/chestcavity/mixin/MixinHungerManager": {
+      "Lnet/minecraft/world/food/FoodData;eat(IF)V": "Lnet/minecraft/world/food/FoodData;m_38707_(IF)V",
+      "addExhaustion": "Lnet/minecraft/world/food/FoodData;m_38703_(F)V",
+      "tick": "Lnet/minecraft/world/food/FoodData;m_38710_(Lnet/minecraft/world/entity/player/Player;)V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinPotionEntity": {
+      "applyWater": "Lnet/minecraft/world/entity/projectile/ThrownPotion;m_37552_()V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity": {
+      "dropEquipment": "Lnet/minecraft/world/entity/LivingEntity;m_5907_()V",
+      "addAdditionalSaveData": "Lnet/minecraft/world/entity/LivingEntity;m_7380_(Lnet/minecraft/nbt/CompoundTag;)V",
+      "Lnet/minecraft/world/entity/LivingEntity;moveRelative(FLnet/minecraft/world/phys/Vec3;)V": "Lnet/minecraft/world/entity/LivingEntity;m_19920_(FLnet/minecraft/world/phys/Vec3;)V",
+      "actuallyHurt": "Lnet/minecraft/world/entity/LivingEntity;m_6475_(Lnet/minecraft/world/damagesource/DamageSource;F)V",
+      "travel": "Lnet/minecraft/world/entity/LivingEntity;m_7023_(Lnet/minecraft/world/phys/Vec3;)V",
+      "addEffect": "Lnet/minecraft/world/entity/LivingEntity;m_7292_(Lnet/minecraft/world/effect/MobEffectInstance;)Z",
+      "baseTick": "Lnet/minecraft/world/entity/LivingEntity;m_6075_()V",
+      "createLootContext": "Lnet/minecraft/world/entity/LivingEntity;m_7771_(ZLnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;",
+      "getDamageAfterArmorAbsorb": "Lnet/minecraft/world/entity/LivingEntity;m_21161_(Lnet/minecraft/world/damagesource/DamageSource;F)F",
+      "readAdditionalSaveData": "Lnet/minecraft/world/entity/LivingEntity;m_7378_(Lnet/minecraft/nbt/CompoundTag;)V",
+      "decreaseAirSupply": "Lnet/minecraft/world/entity/LivingEntity;m_7302_(I)I",
+      "getJumpPower": "Lnet/minecraft/world/entity/LivingEntity;m_6118_()F"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinWitherEntity": {
+      "Lnet/minecraft/world/entity/boss/wither/WitherBoss;spawnAtLocation(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/entity/item/ItemEntity;": "Lnet/minecraft/world/entity/boss/wither/WitherBoss;m_19998_(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/entity/item/ItemEntity;",
+      "dropCustomDeathLoot": "Lnet/minecraft/world/entity/boss/wither/WitherBoss;m_7472_(Lnet/minecraft/world/damagesource/DamageSource;IZ)V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinCowEntity": {
+      "mobInteract": "Lnet/minecraft/world/entity/animal/Cow;m_6071_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinServerPlayerEntity": {
+      "restoreFrom": "Lnet/minecraft/server/level/ServerPlayer;m_9015_(Lnet/minecraft/server/level/ServerPlayer;Z)V"
+    },
+    "net/tigereye/chestcavity/mixin/ResourceReloadMixin": {
+      "apply(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinEntity": {
+      "checkFallDamage": "Lnet/minecraft/world/entity/Entity;m_7840_(DZLnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)V",
+      "interact": "Lnet/minecraft/world/entity/Entity;m_6096_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinPlayerEntity": {
+      "actuallyHurt": "Lnet/minecraft/world/entity/player/Player;m_6475_(Lnet/minecraft/world/damagesource/DamageSource;F)V",
+      "interactOn": "Lnet/minecraft/world/entity/player/Player;m_36157_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinSheepEntity": {
+      "shear": "Lnet/minecraft/world/entity/animal/Sheep;m_5851_(Lnet/minecraft/sounds/SoundSource;)V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinCreeperEntity": {
+      "tick": "Lnet/minecraft/world/entity/monster/Creeper;m_8119_()V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinEnchantmentHelper": {
+      "doPostDamageEffects": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44896_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "net/tigereye/chestcavity/mixin/MixinItem": {
+      "appendHoverText": "Lnet/minecraft/world/item/Item;m_7373_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinMobEntity": {
+        "checkAndHandleImportantInteractions": "Lnet/minecraft/world/entity/Mob;m_21499_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "net/tigereye/chestcavity/mixin/MixinHungerManager": {
+        "Lnet/minecraft/world/food/FoodData;eat(IF)V": "Lnet/minecraft/world/food/FoodData;m_38707_(IF)V",
+        "addExhaustion": "Lnet/minecraft/world/food/FoodData;m_38703_(F)V",
+        "tick": "Lnet/minecraft/world/food/FoodData;m_38710_(Lnet/minecraft/world/entity/player/Player;)V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinPotionEntity": {
+        "applyWater": "Lnet/minecraft/world/entity/projectile/ThrownPotion;m_37552_()V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity": {
+        "dropEquipment": "Lnet/minecraft/world/entity/LivingEntity;m_5907_()V",
+        "addAdditionalSaveData": "Lnet/minecraft/world/entity/LivingEntity;m_7380_(Lnet/minecraft/nbt/CompoundTag;)V",
+        "Lnet/minecraft/world/entity/LivingEntity;moveRelative(FLnet/minecraft/world/phys/Vec3;)V": "Lnet/minecraft/world/entity/LivingEntity;m_19920_(FLnet/minecraft/world/phys/Vec3;)V",
+        "actuallyHurt": "Lnet/minecraft/world/entity/LivingEntity;m_6475_(Lnet/minecraft/world/damagesource/DamageSource;F)V",
+        "travel": "Lnet/minecraft/world/entity/LivingEntity;m_7023_(Lnet/minecraft/world/phys/Vec3;)V",
+        "addEffect": "Lnet/minecraft/world/entity/LivingEntity;m_7292_(Lnet/minecraft/world/effect/MobEffectInstance;)Z",
+        "baseTick": "Lnet/minecraft/world/entity/LivingEntity;m_6075_()V",
+        "createLootContext": "Lnet/minecraft/world/entity/LivingEntity;m_7771_(ZLnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;",
+        "getDamageAfterArmorAbsorb": "Lnet/minecraft/world/entity/LivingEntity;m_21161_(Lnet/minecraft/world/damagesource/DamageSource;F)F",
+        "readAdditionalSaveData": "Lnet/minecraft/world/entity/LivingEntity;m_7378_(Lnet/minecraft/nbt/CompoundTag;)V",
+        "decreaseAirSupply": "Lnet/minecraft/world/entity/LivingEntity;m_7302_(I)I",
+        "getJumpPower": "Lnet/minecraft/world/entity/LivingEntity;m_6118_()F"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinWitherEntity": {
+        "Lnet/minecraft/world/entity/boss/wither/WitherBoss;spawnAtLocation(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/entity/item/ItemEntity;": "Lnet/minecraft/world/entity/boss/wither/WitherBoss;m_19998_(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/entity/item/ItemEntity;",
+        "dropCustomDeathLoot": "Lnet/minecraft/world/entity/boss/wither/WitherBoss;m_7472_(Lnet/minecraft/world/damagesource/DamageSource;IZ)V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinCowEntity": {
+        "mobInteract": "Lnet/minecraft/world/entity/animal/Cow;m_6071_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinServerPlayerEntity": {
+        "restoreFrom": "Lnet/minecraft/server/level/ServerPlayer;m_9015_(Lnet/minecraft/server/level/ServerPlayer;Z)V"
+      },
+      "net/tigereye/chestcavity/mixin/ResourceReloadMixin": {
+        "apply(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinEntity": {
+        "checkFallDamage": "Lnet/minecraft/world/entity/Entity;m_7840_(DZLnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)V",
+        "interact": "Lnet/minecraft/world/entity/Entity;m_6096_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinPlayerEntity": {
+        "actuallyHurt": "Lnet/minecraft/world/entity/player/Player;m_6475_(Lnet/minecraft/world/damagesource/DamageSource;F)V",
+        "interactOn": "Lnet/minecraft/world/entity/player/Player;m_36157_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinSheepEntity": {
+        "shear": "Lnet/minecraft/world/entity/animal/Sheep;m_5851_(Lnet/minecraft/sounds/SoundSource;)V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinLivingEntity$MixinCreeperEntity": {
+        "tick": "Lnet/minecraft/world/entity/monster/Creeper;m_8119_()V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinEnchantmentHelper": {
+        "doPostDamageEffects": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44896_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "net/tigereye/chestcavity/mixin/MixinItem": {
+        "appendHoverText": "Lnet/minecraft/world/item/Item;m_7373_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V"
+      }
+    }
+  }
+}
